@@ -3,6 +3,7 @@ sudo: required
 services: docker
 
 before_install:
+  - docker login -u pracdock -p 6aef45a8-af6b-41ac-9855-2d0fde640a95
   - docker-compose up --build -d
 
 script:
